@@ -276,6 +276,13 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .investment-card .card-body {
+    height: 150px; /* You can adjust this value to fit the icon's size */
+  }
+}
+
+
 pre,
 code,
 kbd,
@@ -3178,6 +3185,22 @@ textarea.form-control-lg {
   transform: scale(0.95); /* Slightly reduce the size */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Reduce the shadow to give a "pressed" appearance */
 }
+
+
+
+@media (max-width: 576px) {
+    .investment-card {
+        box-shadow: none; /* Removes shadow */
+        border: 0; /* Removes border */
+        background-color: transparent; /* Makes background transparent */
+    }
+
+    .investment-card .card-body {
+        padding: 0; /* Removes padding */
+    }
+}
+
+
 
 
 
